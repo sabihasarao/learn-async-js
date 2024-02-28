@@ -1,1 +1,10 @@
 Explain the code execution based on the order of the messages logged in src/quiz/promise-2darray.txt.
+
+
+When sumPromise1 is created, sum2DArray is invoked with a valid 2D array, logging "Sum called ...".
+ It sets a timeout and logs "returning from sum" after. 
+For sumPromise2, when created with an invalid input, "rejecting ..." is logged promptly.
+
+The setTimeout inside sum2DArray executes and calculates the sum. 
+when completed, "resolving ..." is logged, and the promise resolves with the sum.
+ If the input is invalid, the promise rejects with the corresponding error message.

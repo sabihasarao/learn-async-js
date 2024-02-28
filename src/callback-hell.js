@@ -24,4 +24,3 @@ function doStep1(init, callback) {
   }
   
   doOperation();
-  
